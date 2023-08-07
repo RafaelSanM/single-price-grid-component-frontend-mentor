@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    font-family: "Karla", sans-serif;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 10px var(--light-gray);
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    width: 800px;
+}
+
+section {
+    padding: 35px;
+}
+
+section h1 {
+    color: var(--cyan);
+}
+
+section h2 {
+    margin-top: 20px;
+    color: var(--bright-yellow);
+    font-size: 20px;
+}
+
+section p {
+    color: var(--grayish-blue);
+    margin-top: 10px;
+}
+
+.cards-bottom {
+    display: flex;
+}
+
+.cards-bottom section {
+    flex: 1;
+}
+
+.card-left {
+    background-color: var(--cyan);
+    color: #fff;
+}
+
+.card-left h2 {
+    color: var(--light-gray);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-left .price {
+    color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.card-left .price span {
+    font-size: 13px;
+    margin: 10px;
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+.card-left p {
+    color: var(--light-gray);
+}
+
+.card-right {
+    background-color: var(--cyan);
+    opacity: 0.75;
+    color: #fff;
+}
+
+.card-right h2 {
+    font-size: 20px;
+    color: var(--light-gray);
+    margin-bottom: 15px;
+}
+
+.card-right ul {
+    list-style: none;
+    padding: 0;
+    opacity: 0.7;
+}  
+
+.card-right ul li {
+    line-height: 26px;
+    opacity: 0.75;
+    font-weight: 400;
+}
+
+button {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    padding: 20px 0;
+    margin-top: 50px;
+    width: 90%;
+    background-color: var(--bright-yellow);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media  (max-width: 600px){
+    .container{
+        width: 420px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .cards-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+
+
+/*--- attribution ----*/
+
+.attribution{ 
+    padding-top: 100px;
+    font-size: 14px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
